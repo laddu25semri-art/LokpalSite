@@ -11,25 +11,23 @@
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en-US'; // Set language if needed
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
 				'00D0D000000D1WA',
-				'Web_Embedded',
-				'https://nissan-cec--merge.sandbox.my.site.com/ESWWebEmbedded1747295602737',
+				'DummyEnhancedChat',
+				'https://nissan-cec--merge.sandbox.my.site.com/ESWDummyEnhancedChat1759510838185',
 				{
 					scrt2URL: 'https://nissan-cec--merge.sandbox.my.salesforce-scrt.com'
 				}
 			);
-
-
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
 </script>
+<script type='text/javascript' src='https://nissan-cec--merge.sandbox.my.site.com/ESWDummyEnhancedChat1759510838185/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
-<script type='text/javascript' src='https://nissan-cec--merge.sandbox.my.site.com/ESWWebEmbedded1747295602737/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
