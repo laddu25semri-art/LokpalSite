@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salesforce Messaging for Web Not Netply</title>
+</head>
+<body>
+    <h1>Welcome to Our Website for Free Domain -- Not Netlp</h1>
+    <p>Click the chat button to start a conversation with proActive chat.</p>
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en-US'; // Set language if needed
+
+			embeddedservice_bootstrap.init(
+				'00D0D000000D1WA',
+				'Web_Embedded',
+				'https://nissan-cec--merge.sandbox.my.site.com/ESWWebEmbedded1747295602737',
+				{
+					scrt2URL: 'https://nissan-cec--merge.sandbox.my.salesforce-scrt.com'
+				}
+			);
+
+
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+
+<script type='text/javascript' src='https://nissan-cec--merge.sandbox.my.site.com/ESWWebEmbedded1747295602737/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
